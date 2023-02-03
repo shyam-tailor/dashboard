@@ -3,10 +3,10 @@ var mysql = require('mysql')
 module.exports = {
     openCon: function (con) {
         var con = mysql.createConnection({
-            host: "localhost",
-            user: "u346626345_assignincApp",
-            password: 'Assigninc@123',
-            database: 'u346626345_AssignIncApp'
+            host: "bn99lxpd9gmcm6atvdxz-mysql.services.clever-cloud.com",
+            user: "u8vqt51zfn4lovkj",
+            password: 'u8vqt51zfn4lovkj',
+            database: 'bn99lxpd9gmcm6atvdxz'
         })
         con.connect((err, result) => {
             if (err) {
