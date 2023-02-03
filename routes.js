@@ -62,11 +62,15 @@ client.on('error', (err) => {
 
 app.use(cookieParser());
 
-app.use('/*', (req, res) => {
-    res.sendFile(path.join(__dirname + path.join('dist/nlp/browser/index.html')))
-})
+// app.use('/*', (req, res) => {
+//     res.sendFile(path.join(__dirname + path.join('dist/nlp/browser/index.html')))
+// })
 app.get('/', function (request, response) {
     var con = db.openCon();
+    response.json("You just hit the home page")
+})
+
+app.get('/test', function (request, response) {
     response.json("You just hit the home page")
 })
 
